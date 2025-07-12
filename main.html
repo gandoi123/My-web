@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Hendro Dermawan</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+    <div class="decor-top-left"></div>
+    <div class="decor-bottom-right"></div>
+    <header class="portfolio-header">
+      <h1>Hendro Dermawan</h1>
+      <p class="subtitle">pelajar di SMK swasta teladan medan</p>
+      <p class="kelas">Kelas: 10 TKJ 3</p>
+      <nav>
+        <a href="#ab///out">Tentang</a>
+        <a href="#projects">Projek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+    <section id="about" class="about">
+      <h2>Tentang Saya</h2>
+      <div class="about-desc">
+        <p>Halo! Saya Hendro Dermawan, seorang web developer yang suka membangun aplikasi web modern, responsif, dan mudah digunakan. Saya berpengalaman dengan HTML, CSS, JavaScript, dan Python.</p>
+        <div class="about-time">
+          <span class="icon-clock" style="vertical-align:middle;display:inline-block;width:22px;height:22px;margin-right:6px;">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+              <circle cx="12" cy="12" r="10" stroke="#a47149" stroke-width="2" fill="#fffde7"/>
+              <rect x="11" y="6" width="2" height="7" rx="1" fill="#a47149"/>
+              <rect x="12" y="12" width="6" height="2" rx="1" fill="#a47149" transform="rotate(30 12 12)"/>
+            </svg>
+          </span>
+          Dibuat: <span id="createdTime"></span> &bull; <span id="waktuWIB"></span> WIB
+        </div>
+      </div>
+      <div class="about-time" style="margin-top:10px;font-size:1.05rem;color:#a47149;background:#fffde7;padding:6px 14px;border-radius:8px;box-shadow:0 1px 4px #e0c3fc33;font-weight:bold;display:inline-block;letter-spacing:1px;">🕒 Dibuat: <span id="createdTime"></span></div>
+    </section>
+    <section id="projects" class="projects">
+      <h2>Projek Pilihan</h2>
+      <ul>
+        <li><b>Website Kopi Nusantara</b> &mdash; Web katalog kopi Indonesia dengan fitur interaktif.</li>
+        <li><b>Game Tebak Angka</b> &mdash; Game web sederhana dengan Python Flask.</li>
+        <li><b>Landing Page SmartAI Toolkit</b> &mdash; Landing page produk AI open-source.</li>
+      </ul>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:hendro@email.com">hendro@email.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/hendrodermawan</a></p>
+      <p>Instagram: <a href="#">@hendro.dermawan</a></p>
+    </section>
+    <footer>
+      <p>&copy; 2025 Hendro Dermawan</p>
+      <button id="darkToggle" style="margin-top:18px;padding:8px 24px;border-radius:8px;border:none;background:#ffd600;color:#222;font-weight:bold;cursor:pointer;transition:background 0.2s;">Tampilan Dark Mode</button>
+    </footer>
+    <div id="loginModal" style="position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center;">
+      <div style="background:#fff8f0;padding:36px 28px 28px 28px;border-radius:18px;box-shadow:0 8px 32px #a4714944;max-width:340px;text-align:center;">
+        <h2 style="color:#3a7bd5;margin-bottom:18px;">Login untuk Masuk</h2>
+        <form id="formLogin" style="margin-bottom:18px;">
+          <input type="email" id="loginEmail" placeholder="Email" required style="width:90%;padding:10px 12px;margin-bottom:12px;border-radius:6px;border:1px solid #a47149;font-size:1rem;">
+          <input type="password" id="loginPass" placeholder="Password" required style="width:90%;padding:10px 12px;margin-bottom:12px;border-radius:6px;border:1px solid #a47149;font-size:1rem;">
+          <button type="submit" style="background:#3a7bd5;color:#fff;padding:10px 32px;border:none;border-radius:8px;font-size:1.1rem;font-weight:bold;cursor:pointer;width:100%;">Login Email</button>
+        </form>
+        <div style="margin-bottom:10px;">atau</div>
+        <button id="btnGoogle" style="background:#fff;color:#222;padding:10px 32px;border:1px solid #3a7bd5;border-radius:8px;font-size:1.1rem;font-weight:bold;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" style="width:22px;height:22px;"> Login dengan Google
+        </button>
+        <div id="loginError" style="color:#d32f2f;margin-top:14px;display:none;"></div>
+      </div>
+    </div>    
+  </body>
+</html>

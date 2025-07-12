@@ -1,0 +1,188 @@
+.about-time {
+  align-self: flex-end;
+  font-size: 1.05rem;
+  color: #a47149;
+  background: #fffde7;
+  padding: 6px 14px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #e0c3fc33;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 4px;
+  letter-spacing: 1px;
+  min-width: 220px;
+}
+.icon-clock {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+body.dark-mode .about-time {
+  background: #232526;
+  color: #ffd600;
+  box-shadow: 0 1px 4px #23252699;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f7e8c6 0%, #e0c3fc 100%);
+  color: #222;
+  transition: background 0.5s, color 0.5s;
+}
+.portfolio-header {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat, linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%);
+  color: #fff;
+  padding: 36px 0 18px 0;
+  text-align: center;
+  box-shadow: 0 2px 12px #0001;
+  transition: background 0.5s, color 0.5s;
+  position: relative;
+}
+.portfolio-header::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: linear-gradient(90deg, #3a7bd5cc 0%, #00d2ff99 100%);
+  z-index: 0;
+}
+.portfolio-header > * {
+  position: relative;
+  z-index: 1;
+}
+.portfolio-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.portfolio-header .subtitle {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #e0f7fa;
+}
+.portfolio-header .kelas {
+  margin: 0 0 10px 0;
+  font-size: 1.08rem;
+  color: #ffd600;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.portfolio-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.portfolio-header nav a:hover {
+  color: #ffd600;
+}
+.about, .projects, .contact {
+  max-width: 700px;
+  margin: 36px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #3a7bd522;
+  padding: 32px 24px;
+  transition: background 0.5s, color 0.5s;
+}
+.about h2, .projects h2, .contact h2 {
+  color: #3a7bd5;
+  margin-top: 0;
+}
+.projects ul {
+  padding-left: 20px;
+}
+.projects li {
+  margin-bottom: 12px;
+  font-size: 1.08rem;
+}
+footer {
+  background: #3a7bd5;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0 10px 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  transition: background 0.5s, color 0.5s;
+}
+a {
+  color: #3a7bd5;
+  text-decoration: underline;
+}
+a:hover {
+  color: #00bcd4;
+}
+/* DARK MODE */
+body.dark-mode {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  color: #f5f5f5;
+}
+body.dark-mode .portfolio-header {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #ffe082;
+}
+body.dark-mode .portfolio-header nav a {
+  color: #ffe082;
+}
+body.dark-mode .portfolio-header nav a:hover {
+  color: #ffd600;
+}
+body.dark-mode .portfolio-header .kelas {
+  color: #ffe082;
+}
+body.dark-mode .about, body.dark-mode .projects, body.dark-mode .contact {
+  background: #232323;
+  color: #ffe082;
+}
+body.dark-mode .about h2, body.dark-mode .projects h2, body.dark-mode .contact h2 {
+  color: #ffd600;
+}
+body.dark-mode footer {
+  background: #232526;
+  color: #ffe082;
+}
+body.dark-mode a {
+  color: #ffd600;
+}
+body.dark-mode a:hover {
+  color: #fff59d;
+}
+section {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 600px) {
+  .about, .projects, .contact { padding: 14px 4vw; }
+  .portfolio-header h1 { font-size: 1.5rem; }
+  .portfolio-header .subtitle { font-size: 1rem; }
+}
+body, .portfolio-header, .about, .projects, .contact, footer {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+.decor-top-left {
+  position: fixed;
+  top: 0; left: 0;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle at 40px 40px, #ffd600cc 60px, #3a7bd5cc 120px);
+  border-bottom-right-radius: 80px;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.decor-bottom-right {
+  position: fixed;
+  bottom: 0; right: 0;
+  width: 140px; height: 140px;
+  background: radial-gradient(circle at 100px 100px, #00d2ffcc 60px, #e0c3fc99 140px);
+  border-top-left-radius: 100px;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.7;
+}
+@media (max-width: 600px) {
+  .decor-top-left { width: 60px; height: 60px; }
+  .decor-bottom-right { width: 70px; height: 70px; }
+}
